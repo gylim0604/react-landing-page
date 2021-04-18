@@ -1,0 +1,42 @@
+@import '../primary.scss';
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    // height: 10vh;
+    align-items: flex-end;
+    border-bottom: solid 1px $very-dark-blue;
+    font-family: $ubuntu;
+    .nav-brand{
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        color: $grey-blue;
+        h1{
+            margin-bottom: 0;
+            vertical-align: text-bottom;
+        }
+        img{
+            padding-left: 2rem;
+            height: 5rem;
+
+        }
+    }
+    .nav-links{
+        padding: 0 2rem;
+        flex-grow: 1;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        a{
+            margin: 0 .5rem;
+            text-decoration: none;
+            &:hover{
+                color: grey;
+            }
+        }
+    }
+}
