@@ -1,0 +1,15 @@
+@import '../../primary.scss';
+
+.Hero{
+    background: url("https://picsum.photos/seed/picsum/1920/1080") no-repeat center;
+    background-size: 100% auto ;
+    padding: 5rem;
+    color: $very-dark-blue;
+    h1{
+        padding: 0 1rem;
+    }
+    .subtitle{
+        padding: 1rem ;
+        background: white;
+    }
+}

@@ -1,0 +1,23 @@
+@import '../../primary.scss';
+
+.footer{
+    background: $very-dark-blue;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    .col-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-width: 1200px;
+        margin: 0 auto;
+        .col{
+            padding: 0 1rem;
+            ul{
+                list-style: none;
+                text-align: left;
+                padding-left: 0;
+            }
+        }
+    }
+}

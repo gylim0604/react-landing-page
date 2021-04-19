@@ -10,10 +10,10 @@ function Header(){
                 <img src={logo}alt=""/>
             </span>
             <span className="nav-links">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Product</a>
-            <a href="">Contact</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Product</a>
+            <a href="#">Contact</a>
             </span>
         </div>
     )
