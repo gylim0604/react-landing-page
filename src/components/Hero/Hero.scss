@@ -1,5 +1,4 @@
 @import '../../primary.scss';
-
 .Hero{
     background: url("https://picsum.photos/seed/picsum/1920/1080") no-repeat center;
     background-size: 100% auto ;
@@ -10,6 +9,6 @@
     }
     .subtitle{
         padding: 1rem ;
-        background: white;
+        background: rgba(255,255,255,30%);
     }
 }

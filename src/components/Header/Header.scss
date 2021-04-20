@@ -3,10 +3,8 @@
 .nav{
     display: flex;
     flex-direction: row;
-    width: 100vw;
-    // height: 10vh;
     align-items: flex-end;
-    border-bottom: solid 1px $very-dark-blue;
+    // border-bottom: solid 1px $very-dark-blue;
     font-family: $ubuntu;
     .nav-brand{
         padding: 0 1rem;

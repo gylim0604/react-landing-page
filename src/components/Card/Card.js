@@ -1,50 +1,25 @@
 import React from 'react';
-
-function Card() {
-  const [fruits, setFruits] = React.useState([
-    { id: '1', name: 'Mainle', isFavorite: false },
-    { id: '2', name: 'Peach', isFavorite: true },
-    { id: '3', name: 'Strawberry', isFavorite: false },
-  ]);
- 
-  function handleClick(item) {
-    const newFruits = fruits.map((fruit) => {
-      if (fruit.id === item.id) {
-        return {
-          id: fruit.id,
-          name: fruit.name,
-          isFavorite: !fruit.isFavorite,
-        };
-      } else {
-        return fruit;
-      }
-    });
- 
-    setFruits(newFruits);
-  }
- 
-  return (
-    <div className="main">
-      <h3>with no styling</h3>
- 
-      <Basket items={fruits} onClick={handleClick} />
+import './Card.scss';
+function Card(){
+  return(
+    <div class="card">
+      <span className="copy">
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eius, maxime quae incidunt sapiente perferendis!
+          </h2>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis numquam, animi nulla placeat error facere saepe voluptate nisi rem doloremque!
+        </p>
+      </span>
+      <div className="bg">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, odio aliquid fugiat fugit quos architecto?</h2>
+        <span className="buttons">
+          <a className="button" href="">Explore</a>
+          <a className="button" href="">Learn More</a>
+        </span>
+      </div>
     </div>
-  );
-}
- 
-function Basket({ items, onClick }) {
-  return (
-    <ul>
-      {items.map((item) => (
-        <li key={item.id}>
-          {item.name}
-          <button className="button" type="button" onClick={() => onClick(item)}>
-            {item.isFavorite ? 'Unlike' : 'Like'}
-          </button>
-        </li>
-      ))}
-    </ul>
-  );
+  )
 }
  
 export default Card;
